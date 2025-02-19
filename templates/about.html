@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 </head>
 <body>
-    <h1>Kaydeen Tucker</h1>
-    <p>
-        I am a Computer Science major with an interest in AI development, playing the Cello, and travelling to different Countries.
-    </p>
+    <section class="about-me">
+        <div class="about"> 
+            <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="My Image" class="pic">
+
+            <div class="text">
+                <h1>Kaydeen Tucker</h1>
+                <p>I am a Computer Science major with an interest in AI development, playing the Cello, and travelling to different Countries.</p>
+            </div> 
+        </div>
+    </section>
 </body>
 </html>
